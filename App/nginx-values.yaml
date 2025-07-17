@@ -1,3 +1,15 @@
 controller:
   metrics:
     enabled: true
+
+
+#para habilitar métricas no NGINX
+
+## Função:
+
+#Instala e gerencia o Ingress Controller NGINX, que:
+#Recebe requisições externas (HTTP/HTTPS)
+#Faz o roteamento dessas requisições para os serviços internos do cluster, conforme regras definidas em recursos Ingress.
+
+#Resumo:
+#É o "porteiro" HTTP do seu cluster, controlando o tráfego de entrada.

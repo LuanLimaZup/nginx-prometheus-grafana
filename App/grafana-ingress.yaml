@@ -1,0 +1,22 @@
+# apiVersion: networking.k8s.io/v1
+# kind: Ingress
+# metadata:
+#   name: grafana-ingress
+#   namespace: default
+# spec:
+#   ingressClassName: nginx
+#   rules:
+#     - host: grafana.local
+#       http:
+#         paths:
+#           - path: /
+#             pathType: Prefix
+#             backend:
+#               service:
+#                 name: monitoring-grafana
+#                 port:
+#                   number: 80
+
+
+#É um recurso do tipo Ingress do Kubernetes. 
+#Ele serve para expor o serviço do Grafana para fora do cluster, usando o NGINX Ingress Controller.
